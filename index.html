@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Bosphorus | Gym Apparel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Iron Bosphorus</div>
+        <ul class="nav-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><button id="cartBtn">Cart (<span id="cartCount">0</span>)</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>Built for the Grind.</h1>
+        <p>Premium gym wear designed in Istanbul.</p>
+        <button class="cta-btn">Shop Collection</button>
+    </header>
+
+    <main>
+        <section class="products-container">
+            <h2>Latest Drops</h2>
+            <div id="productGrid" class="grid"></div>
+        </section>
+    </main>
+
+    <div id="cartModal" class="modal-hidden">
+        <div class="modal-content">
+            <span id="closeCart" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: ₺<span id="totalPrice">0.00</span></h3>
+            </div>
+            <button class="checkout-btn" onclick="alert('Checkout not implemented yet!')">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Iron Bosphorus Gymwear.</p>
+        <p>Shipping locally via Aras Kargo.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
